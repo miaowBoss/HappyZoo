@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/fragment_background</item>
+    </style>
+
+    <style name="ToolBarStyle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">30</item>
+        <item name="android:shadowDy">30</item>
+    </style>
+
+    <style name="TextContentStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_content_white</item>
+    </style>
+
+    <style name="TextContentStyle.Black" parent="TextContentStyle">
+        <item name="android:textColor">@color/text_content_black</item>
+    </style>
+
+
+    <style name="TextContentStyle.ToolBar">
+        <item name="titleTextColor" tools:targetApi="m">@color/text_content_white</item>
+    </style>
+
+</resources>

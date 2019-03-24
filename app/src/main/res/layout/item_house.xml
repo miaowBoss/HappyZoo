@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clItem"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/vMask"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_mask"
+                app:layout_constraintBottom_toBottomOf="@+id/ivPic"
+                app:layout_constraintLeft_toLeftOf="@+id/ivPic"
+                app:layout_constraintRight_toRightOf="@+id/ivPic"
+                app:layout_constraintTop_toTopOf="@+id/ivPic" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextContentStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvContent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                style="@style/TextContentStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvCategory"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintHorizontal_weight="6"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_constraintHorizontal_chainStyle="spread" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                style="@style/TextContentStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="@+id/tvContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@+id/tvContent"
+                app:layout_constraintTop_toTopOf="@+id/tvContent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

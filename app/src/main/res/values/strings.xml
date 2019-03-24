@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HappyZoo</string>
+
+    <string name="common_text_leave_app"> 再次點擊返回，將離開APP。</string>
+
+    <string name="item_alsoKnown">別名</string>
+    <string name="item_brief">簡介</string>
+    <string name="item_feature">辨認方式</string>
+    <string name="item_function">功能性</string>
+    <string name="item_update">最後更新</string>
+
+    <string name="anim_key">anim</string>
+</resources>

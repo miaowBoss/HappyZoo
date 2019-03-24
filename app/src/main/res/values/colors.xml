@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#134611</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#E8FCCF</color>
+    <color name="fragment_background">#fff</color>
+
+    <color name="black_mask">#A3000000</color>
+    <color name="item_board_bar">#8BC34A</color>
+
+    <color name="text_content_black">#000000</color>
+    <color name="text_content_white">#ffffff</color>
+
+</resources>
